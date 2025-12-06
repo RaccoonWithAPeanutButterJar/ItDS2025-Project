@@ -8,46 +8,21 @@ Because of the rising popularity of AI use and worry that it might take over man
 The goal of the project is to perform an analysis of the public Kaggle dataset to find current and projected job trends across industries to then build a predictive model to classify whether a job will be increasing or decreasing by 2030.
 
 ## The Dataset
-### Dataset Overview
-This comprehensive dataset contains detailed information about AI and machine learning job positions, salaries, and market trends across different countries, experience levels, and company sizes. Perfect for data science enthusiasts, career researchers, and market analysts for practice purposes.
+The dataset is a public Kaggle dataset with 30,000 rows and 13 valuable columns, generated to reflect realistic labor market patterns based on ongoing research and public data insights (2024-2030)
 
-#### Dataset Description
-What's Inside
-It includes detailed salary information, job requirements, company insights, and geographic trends.
-
-#### Key Features:
-
-+ 15,000+ job listings from 50+ countries
-+ Salary data in multiple currencies (normalized to USD)
-+ Experience level categorization (Entry, Mid, Senior, Executive)
-+ Company size impact analysis
-+ Remote work trends and patterns
-+ Skills demand analysis
-+ Geographic salary variations
-+ Time-series data showing market evolution
-
-| Column Name | Description | Type |
-| :--- | :--- | :--- |
-| `job_id` | Unique identifier for each job posting | String |
-| `job_title` | Standardized job title | String |
-| `salary_usd` | Annual salary in USD | Integer |
-| `salary_currency` | Original salary currency | String |
-| `salary_local` | Salary in local currency | Float |
-| `experience_level` | EN (Entry), MI (Mid), SE (Senior), EX (Executive) | String |
-| `employment_type` | FT (Full-time), PT (Part-time), CT (Contract), FL (Freelance) | String |
-| `job_category` | ML Engineer, Data Scientist, AI Researcher, etc. | String |
-| `company_location` | Country where company is located | String |
-| `company_size` | S (Small <50), M (Medium 50-250), L (Large >250) | String |
-| `employee_residence` | Country where employee resides | String |
-| `remote_ratio` | 0 (No remote), 50 (Hybrid), 100 (Fully remote) | Integer |
-| `required_skills` | Top 5 required skills (comma-separated) | String |
-| `education_required` | Minimum education requirement | String |
-| `years_experience` | Required years of experience | Integer |
-| `industry` | Industry sector of the company | String |
-| `posting_date` | Date when job was posted | Date |
-| `application_deadline` | Application deadline | Date |
-| `job_description_length` | Character count of job description | Integer |
-| `benefits_score` | Numerical score of benefits package (1-10) | Float |
+Here is a description of each column:
++ Job - Title Name of the job/role (e.g., Data Analyst, Cashier, etc.)
++ Industry - Industry sector in which the job is categorized (e.g., IT, Healthcare, Manufacturing)
++ Job Status - Indicates whether the job is Increasing or Decreasing due to AI adoption
++ AI Impact Level - Estimated level of AI impact on the job: Low, Moderate, or High
++ Median Salary (USD) - Median annual salary for the job in USD
++ Required Education - Typical minimum education level required for the job
++ Experience Required (Years) - Average number of years of experience required
++ Job Openings (2024) - Number of current job openings in 2024
++ Projected Openings (2030) - Projected job openings by the year 2030
++ Remote Work Ratio (%) - Estimated percentage of jobs that can be done remotely
++ Automation Risk (%) - Probability of the job being automated or replaced by AI
++ Location Country - where the job data is based (e.g., USA, India, UK, etc.)
 
 ## TODO
 + Provide a guide to the contents of the repository
