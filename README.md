@@ -1,6 +1,6 @@
 # ItDS2025 - Project F4
-# AI Impact on job market - Predicting jobs that are at risk (or growing) under the ever rising use of AI
-## Team: Nele Taisi Järv, Rico Akiro Kaio, Christen Mägi
+ AI Impact on job market - Predicting jobs that are at risk (or growing) under the ever rising use of AI
+ <br>Team: Nele Taisi Järv, Rico Akiro Kaio, Christen Mägi
 
 ## Goal and motivation
 Because of the rising popularity of AI use and worry that it might take over many jobs, we decided to base our project off of that to analyse and predict which jobs and industries are or will be at risk of being taken over by AI.
