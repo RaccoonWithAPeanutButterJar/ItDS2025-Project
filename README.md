@@ -24,6 +24,33 @@ Here is a description of each column:
 + Automation Risk (%) - Probability of the job being automated or replaced by AI
 + Location Country - where the job data is based (e.g., USA, India, UK, etc.)
 
-## TODO
-+ Provide a guide to the contents of the repository
-+ Explain how to take the code and replicate the same analysis
+## Repository Structure & How to replicate the Analysis
+
+This repository contains the full analysis pipeline, broken down into four key notebooks.
+
+To replicate the analysis and reproduce the findings presented in this project, the code has been structured into four sequential stages. Please execute the Jupyter Notebooks in the following order:
+
+* **`1_Data_Cleaning.ipynb`**
+    * **Goal:** Prepare the raw data for analysis.
+    * **Process:** Checks for missing values, duplicates, and verifies data types. Since the synthetic dataset is clean, this notebook confirms data integrity before proceeding.
+
+* **`2_Exploratory_Analysis.ipynb`**
+    * **Goal:** Understand the current job landscape.
+    * **Key Insights:** Visualizes the distribution of jobs across industries, compares median salaries, and analyzes the relationship between automation risk and projected growth.
+    * **Highlight:** Discovered that automation risk averages ~50% across most industries, suggesting broad AI applicability rather than sector-specific targeting.
+
+* **`3_Clustering_Analysis.ipynb`** (Unsupervised Learning)
+    * **Goal:** Group jobs into distinct categories based on risk and reward.
+    * **Method:** Uses **K-Means Clustering** to segment jobs into three types:
+        1.  **Fast-growing specialist roles** (High growth, niche skills).
+        2.  **High-paying / High-risk roles** (Vulnerable to automation but lucrative).
+        3.  **Low-risk core roles** (Stable, resilient jobs).
+
+* **`4_Predictive_Modeling.ipynb`** (Supervised Learning)
+    * **Goal:** Predict future job trends.
+    * **Models:**
+        * **Classification:** Used Random Forest & KNN to predict if a job's status is "Increasing" or "Decreasing".
+        * **Regression:** Attempted to forecast the exact number of `Projected Openings` (2030).
+    * **Result:** The classification task proved difficult (approx. 50% accuracy), indicating that job status depends on complex factors beyond just salary and automation risk.
+
+---
